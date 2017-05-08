@@ -1,0 +1,440 @@
+
+html {
+	margin:0; 
+	padding:0; 
+	height:100%; 
+}
+
+body {
+	margin:0; 
+	padding:0; 
+	height:100%; 
+	background-color: #f9f9f9;
+}
+
+table {
+	border: 1px solid #dadada;
+	background: #fff;
+}
+
+table th, table td {
+	text-align: center;
+}
+
+p {
+    padding:0;
+    margin:0;
+}
+
+#wrap_body {
+	height:100%;
+	position:relative;
+}
+
+#content_wrap {
+	margin:0 0 -100px;
+	width:100%;
+	min-height:100%;
+}
+
+#content_wrap #container {
+	padding:0 0 100px;
+}
+
+#footer {
+	width:100%;
+	height:100px;
+	color: rgb(136, 138, 140);
+	background-color:rgb(67, 69, 71);
+	text-align: center;
+	vertical-align: center;
+	padding-top:40px;
+}
+
+/*
+.table-striped>thead{
+	background-color: #ececec;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td{
+	background-color: white;
+}
+.table-striped>tbody>tr:nth-child(even)>td{
+	background-color: #f9f9f9;
+}
+*/
+
+.btn {
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);	
+}
+
+.btn-link {
+	border: none;
+	box-shadow: none;
+}
+
+#canvas_dashboard_sales,
+#canvas_dashboard_affiliate {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.crm_login_container {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.crm_navbar {
+	background-color: rgb(67, 69, 71);
+	border-color: rgb(67, 69, 71);
+	border-radius: 0;
+	border: none;
+}
+
+.crm_navbar_brand {
+	padding: 0;
+	margin: 0;
+}
+
+.crm_tab_label {
+	color: #FFF !important;
+	font: 16px;	
+	font-weight: 500;
+	line-height: 1;
+}
+
+.crm_tab_label:hover {
+	background: #05948b !important;
+}
+
+.crm_tab_active_label {
+	color: #05948b !important;
+	font-weight: bold;
+}
+
+.crm_login_logo {
+	max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.crm_login_logo img {
+	width: 200px;
+}
+
+.crm_setting_dropdown {
+	background-color: rgb(67, 69, 71) !important;
+	color: white;
+	border: none;
+	border-radius: 0;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+	background-color: #05948b !important;
+}
+
+.crm_content {
+	background-color: #f9f9f9;
+	min-width: 900px;
+	padding-bottom: 20px;
+	margin-left: 30px;
+	margin-right: 30px;
+	padding-top: 10px;
+}
+
+.horizontal_rule {
+    margin: 10px 0 10px;
+    padding: 0;
+    background: #494949;
+    height: 3px;
+}
+
+.dashboard_sales_waiting,
+.dashboard_affiliate_waiting,
+.dashboard_alert_waiting,
+.dashboard_server_waiting {
+	text-align: center;
+}
+
+/* Webkit spinner */
+.spinner {
+	margin: 0 auto;
+	padding: 0;
+	width: 70px;
+	text-align: center;
+	display: inline-block;
+}
+
+.spinner > div {
+	width: 15px;
+	height: 15px;
+	background-color: #d0e2bb;
+
+	border-radius: 100%;
+	display: inline-block;
+	-webkit-animation: bouncedelay 1.4s infinite ease-in-out;
+	animation: bouncedelay 1.4s infinite ease-in-out;
+	/* Prevent first frame from flickering when animation starts */
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+.spinner .bounce1 {
+	-webkit-animation-delay: -0.32s;
+	animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+	-webkit-animation-delay: -0.16s;
+	animation-delay: -0.16s;
+}
+
+@-webkit-keyframes bouncedelay {
+	0%, 80%, 100% { -webkit-transform: scale(0.0) }
+	40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes bouncedelay {
+	0%, 80%, 100% { 
+		transform: scale(0.0);
+		-webkit-transform: scale(0.0);
+	} 40% { 
+		transform: scale(1.0);
+		-webkit-transform: scale(1.0);
+	}
+}
+
+.setting_crm_add,
+.setting_crm_edit,
+.setting_crm_password,
+.setting_api_password,
+.setting_crm_delete,
+.setting_label_add,
+.setting_label_edit,
+.setting_label_delete,
+.setting_account_add,
+.setting_account_edit,
+.setting_account_password,
+.setting_account_delete,
+.setting_permission_edit,
+.setting_ip_add,
+.setting_ip_edit,
+.setting_ip_delete,
+.btn_affiliate_edit,
+.btn_affiliate_delete,
+.btn_expand_all,
+.btn_sub_expand,
+.btn_refresh_all,
+.btn_refresh,
+.btn_setting,
+.btn_campaign_head,
+.btn_campaign_expand,
+.btn_blockip_edit,
+.btn_blockip_delete,
+.btn_level_edit,
+.btn_receiver_sms_edit,
+.btn_receiver_sms_delete,
+.btn_receiver_mail_edit,
+.btn_receiver_mail_delete,
+.btn_receiver_bot_edit,
+.btn_receiver_bot_delete,
+.btn_type_edit {
+	padding: 0;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.date_control {
+	width: 140px;
+	margin-right: 10px;
+}
+
+.dashboard_sales_search,
+.setting_campaign_search {
+	padding: 0 10px 0 10px;
+	margin-left: 10px;
+	height: 30px;
+}
+
+.setting_campaign_crm {
+	padding: 0 10px 0 10px;
+	margin-left: 10px;
+	height: 30px;
+}
+
+.setting_campaign_edit {
+	width : 150px;
+	height: 30px;	
+}
+
+.alert-warning {
+	padding: 10px 15px 10px 15px;
+	margin-bottom: 10px;
+}
+
+.modal_input_label {
+	height:30px;
+	padding-top:5px;
+	text-align: right;
+}
+
+.bar-main-container {
+	margin: 0 auto;
+	padding: 5px;
+	width: 250px;
+	height: 30px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 0.9em;
+	color: #FFF;
+	background: #a5e0e0;
+}
+
+.bar-percentage {
+	float: left;
+	background: rgba(0,0,0,0.13);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	width: 40px;
+	height: 100%;
+	text-align: center;
+	padding-top: 3px;
+}
+
+.bar-container {
+	float: right;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	height: 10px;
+	background: rgba(0,0,0,0.13);
+	width: 195px;
+	overflow: hidden;
+	margin-top: 5px;
+}
+
+.bar {
+	float: left;
+	background: #FFF;
+	height: 100%;
+	-webkit-border-radius: 10px 0px 0px 10px;
+	-moz-border-radius: 10px 0px 0px 10px;
+	border-radius: 10px 0px 0px 10px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
+}
+
+.glyphicon {
+	color: #05948b;
+	font-size: 16px;
+	vertical-align: middle;
+	margin-bottom: 2px;
+}
+
+.export_link {
+	color: #05948b;
+	padding:6px 20px 6px 20px;
+	border: 1px solid #05948b;
+	border-radius: 3px;
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+}
+
+.export_link:hover,
+.export_link:hover > span {
+	color: #fff;
+	background: #05948b;
+	text-decoration:none;
+}
+
+.bs-docs-sidebar .nav>li>a {
+    color: #000;
+    border-left: 2px solid transparent;
+    padding: 4px 20px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+/* active & hover links */
+.bs-docs-sidebar .nav>.active>a, 
+.bs-docs-sidebar .nav>li>a:hover, 
+.bs-docs-sidebar .nav>li>a:focus {
+    color: #05948b;                 
+    text-decoration: none;          
+    background-color: transparent;  
+    border-left-color: #05948b; 
+}
+
+/* all active links */
+.bs-docs-sidebar .nav>.active>a, 
+.bs-docs-sidebar .nav>.active:hover>a,
+.bs-docs-sidebar .nav>.active:focus>a {
+    font-weight: 700;
+}
+
+.crm_sidebar {
+	width: 200px;
+	background: #fff;
+	position: fixed;
+	padding: 20px;
+	border: 1px solid #05948b;
+	border-radius: 5px;
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+}
+
+.panel-heading {
+	 height: 42px;
+}
+
+.tab_row_default {
+	font-size: 20px;	
+	font-weight: bold;
+	color: #fff;
+	background: #05948b;
+	height : 40px;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 10px;
+	padding-top: 6px;
+}
+
+.tab_row_alert {
+	font-size: 20px;	
+	font-weight: bold;
+	color: #fff;
+	background: #e74b4e;
+	height : 40px;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 10px;
+	padding-top: 6px;
+}
+
+.btn-success {
+    background-color: #05948b;
+    border-color: #05948b;
+}
+
+.btn-success:hover, .btn-success:focus {
+	background-color: #0c7971;
+	border-color: #0c7971;
+}
